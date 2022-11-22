@@ -27,7 +27,7 @@
 }
 
 .logoname p .flow{
-    color:#ffffff
+    color:var(--third-color);
 }
 
 .login,.register{
@@ -35,7 +35,7 @@
     min-width: 20ch;
     margin: 0.5ch;
     border-radius: 2ch;
-    background-color: #06ff00;
+    background-color: var(--second-color);
     border: 0;
 }
 
