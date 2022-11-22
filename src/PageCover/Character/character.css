@@ -1,0 +1,22 @@
+.character{
+    position: relative;
+    background-image: url("./CharacterFrames/Walk/Walk0000.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.character.walk{
+    animation-name: walk;
+    animation-duration: 0.75s;
+    animation-iteration-count: infinite; 
+    animation-timing-function: linear;   
+}
+
+@keyframes walk{
+    0%{background-image: url("./CharacterFrames/Walk/Walk0001.png");}
+    20%{background-image: url("./CharacterFrames/Walk/Walk0002.png");}
+    40%{background-image: url("./CharacterFrames/Walk/Walk0003.png");}
+    60%{background-image: url("./CharacterFrames/Walk/Walk0004.png");}
+    80%{background-image: url("./CharacterFrames/Walk/Walk0005.png");}
+    100%{background-image: url("./CharacterFrames/Walk/Walk0006.png");}
+}
