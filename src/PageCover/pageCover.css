@@ -1,53 +1,13 @@
 .pageCover{
     background-image: -moz-linear-gradient(0deg, var(--main-color),#2f2f2f);
-    height: calc(0.3371*100vw);
+    height: calc(0.3*100vw);
+    display: grid;
+    grid-template-columns: 60% 40%;
 }
 
-.rotator{
-    max-width: 13%;
+.pageCoverGameScreen{
     position: relative;
-    top: 16%;
-    left: 3%;
-
-    transform-origin: 50% 47%;
-    animation-name: rotate;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes rotate {
-    0%{transform: rotate(0deg);}
-    50%{transform: rotate(0deg);}
-    100%{transform: rotate(-360deg);}
-}
-
-.rotator img{
-    max-width: 100%;
-    max-height: 100%;
-}
-
-
-#aminal{
-    display:inline;
-    margin: 0;
-    font-size: 10vw;
-    position: relative;
-    bottom: 12.5%;
-    left: 17%
-
-}
-#flow{
-    display:inline;
-    margin: 0;
-    color: var(--third-color);
-    font-size: 10vw;
-    position: relative;
-    top:14%;
-    right: 8%;
-}
-
-
-
-.pageCover button{
-    visibility: hidden;
+    width: 100%;
+    height: calc(0.3*100vw);
+    bottom: calc(0.3*100vw);
 }

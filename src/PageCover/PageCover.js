@@ -1,17 +1,21 @@
 import React from 'react'
-import rotator from '../Graphics/rotator.png'
+import {useRef} from 'react'
+import PageCoverLogoPane from './PageCoverLogoPane'
+import PageCoverNavigationPane from './PageCoverNavigationPane'
 import './pageCover.css'
 
 const PageCover = () => {
+  const pageCoverRef=useRef();
+  
   return (
-    <div className="pageCover">
-        <div className='rotator'><img src={rotator} alt="G" /></div>
-        <h1 id='aminal'>aminal</h1>
-        <h1 id='flow'>Flow</h1>
-        
-        
-        <button>Find Terminal <br/> Games</button>
-    </div>
+    <>
+      <div className="pageCover" >
+        <PageCoverLogoPane />
+        <PageCoverNavigationPane />
+      </div>
+      <div className="pageCoverGameScreen" ref={pageCoverRef}>
+      </div>
+    </>
   )
 }
 
