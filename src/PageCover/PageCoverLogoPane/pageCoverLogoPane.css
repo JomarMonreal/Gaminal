@@ -1,0 +1,42 @@
+.rotator{
+    max-width: 18%;
+    position: relative;
+    top: 22.5%;
+    left: 15%;
+
+    transform-origin: 50% 47%;
+    animation-name: rotate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+    0%{transform: rotate(0deg);}
+    50%{transform: rotate(0deg);}
+    100%{transform: rotate(-360deg);}
+}
+
+.rotator img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+#aminal{
+    display:inline;
+    margin: 0;
+    font-size: 7vw;
+    position: relative;
+    bottom: 0.5%;
+    left: 34%;
+
+}
+#flow{
+    display:inline;
+    margin: 0;
+    color: var(--third-color);
+    font-size: 7vw;
+    position: relative;
+    top:20%;
+    left: 5%;
+}
